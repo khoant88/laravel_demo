@@ -63,3 +63,5 @@ Route::prefix('admin')->group(function(){
 Route::get('/api/users/{user}', function(\App\User $user){
     return $user->email;
 });
+
+Route::resource('/photos', 'PhotoController');
