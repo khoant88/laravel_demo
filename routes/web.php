@@ -43,14 +43,14 @@ Route::get('user/profile', function () {
 Route::get('user/profileSecond', 'UserController@profile')->name('profileSecond');
 
 //Middleware
-Route::middleware(['first', 'second'])->group(function(){
-    Route::get('/', function(){
-
-    });
-    Route::get('/test', function(){
-
-    });
-});
+//Route::middleware(['first', 'second'])->group(function(){
+//    Route::get('/', function(){
+//
+//    });
+//    Route::get('/test', function(){
+//
+//    });
+//});
 
 //Prefix
 Route::prefix('admin')->group(function(){
